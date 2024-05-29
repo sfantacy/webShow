@@ -1,0 +1,40 @@
+{
+  "name": "@alipay/fecodex-generator-15602792",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bigfish build",
+    "ci": "bigfish lint",
+    "dev": "bigfish dev",
+    "devs": "cross-env MOCK=none bigfish dev",
+    "format": "prettier --cache --write .",
+    "postinstall": "bigfish setup",
+    "lint": "bigfish lint",
+    "lint:fix": "bigfish lint --fix",
+    "oneapi": "npm run oneapi:service && npm run oneapi:mock",
+    "oneapi:mock": "bigfish api generate mock",
+    "oneapi:service": "bigfish api generate service",
+    "prepare": "husky install",
+    "setup": "bigfish setup",
+    "test": "bigfish test"
+  },
+  "dependencies": {
+    "@alipay/bigfish": "^4.2.0-rc.0",
+    "@ant-design/icons": "5",
+    "ahooks": "^3.7.10",
+    "antd": "5.16.2",
+    "umi-request": "^1.4.0"
+  },
+  "devDependencies": {
+    "@ali/ci": "^4.43.0",
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.1.2"
+  },
+  "tnpm": {
+    "mode": "npm"
+  },
+  "repository": "https://code.alipay.com/fecodex-generator/fecodex-generator-15602792"
+}
